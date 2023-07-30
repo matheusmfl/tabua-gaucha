@@ -12,6 +12,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-bg': 'url(./assets/bg-hero.svg)',
+        'last-section': '(./assets/bg-last-section.svg)',
         'section-1': 'url(./assets/section-1-bg.jpeg)',
       },
       backgroundColor: {
