@@ -3,7 +3,7 @@ import encomenda from '../assets/sob-encomenda-img.png'
 
 export function SectionSobDemanda() {
   return (
-    <section className="py-20 px-6 flex flex-col gap-10">
+    <section className="py-20 px-6 flex flex-col gap-10 bg-slate-100">
       {/* Chamada */}
       <div className="flex items-center justify-center flex-col gap-5">
         <h2 className="text-center font-roboto text-[#3C3A1E] text-4xl font-normal leading-[51px]">
