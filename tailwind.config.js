@@ -14,6 +14,12 @@ module.exports = {
         'hero-bg': 'url(./assets/bg-hero.svg)',
         'section-1': 'url(./assets/section-1-bg.jpeg)',
       },
+      backgroundColor: {
+        'glasmophism-bg': 'rgba(255, 255, 255, 0.16);',
+      },
+      boxShadow: {
+        'glasmophism-shadow': '4px 4px 8px 0px rgba(0, 0, 0, 0.12);'
+      },
       fontFamily: {
         roboto: 'var(--font-roboto)'
       }
