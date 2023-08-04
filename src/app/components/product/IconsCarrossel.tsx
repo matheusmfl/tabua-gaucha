@@ -29,7 +29,7 @@ export function IconsCarrossel() {
     >
       <SwiperSlide>
         <div className='flex items-center justify-center w-full gap-3'>
-          <Image src={icon1} alt='Icone alt' />
+          <Image src={icon1} alt='Icone alt' priority />
           {/* Text divs */}
           <div className='font-roboto text-stone-800 flex flex-col gap-1'>
             <strong className='text-base'>ATÉ 5X SEM JUROS</strong>
@@ -40,7 +40,7 @@ export function IconsCarrossel() {
         </div>
       </SwiperSlide>
       <SwiperSlide><div className='flex items-center justify-center w-full gap-3'>
-        <Image src={icon2} alt='Icone alt' />
+        <Image src={icon2} alt='Icone alt' priority />
         {/* Text divs */}
         <div className='font-roboto text-stone-800 flex flex-col gap-1'>
           <strong className='text-base'>10% DE DESCONTO</strong>
@@ -50,7 +50,7 @@ export function IconsCarrossel() {
         </div>
       </div></SwiperSlide>
       <SwiperSlide><div className='flex items-center justify-center w-full gap-3'>
-        <Image src={icon3} alt='Icone alt' />
+        <Image src={icon3} alt='Icone alt' priority />
         {/* Text divs */}
         <div className='font-roboto text-stone-800 flex flex-col gap-1'>
           <strong className='text-base'>FRETE GRÁTIS</strong>
@@ -60,7 +60,7 @@ export function IconsCarrossel() {
         </div>
       </div></SwiperSlide>
       <SwiperSlide><div className='flex items-center justify-center w-full gap-3'>
-        <Image src={icon4} alt='Icone alt' />
+        <Image src={icon4} alt='Icone alt' priority />
         {/* Text divs */}
         <div className='font-roboto text-stone-800 flex flex-col gap-1'>
           <strong className='text-base'>SITE SEGURO</strong>
