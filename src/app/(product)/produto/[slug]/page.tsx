@@ -1,5 +1,6 @@
 import { Header } from "@/app/components/Header";
 import { IconsCarrossel } from "@/app/components/product/IconsCarrossel";
+import { ProductDescription } from "@/app/components/product/ProductDescription";
 import { ProductImgs } from "@/app/components/product/ProductImgs";
 import { ProductTitle } from "@/app/components/product/ProductTitle";
 
@@ -50,6 +51,8 @@ export default async function Page() {
         <ProductTitle title="Mesa de centro de - carvalho resinado" tags={tags} />
         {/* Divisor */}
         <div className="h-[1px] bg-[#3C3A1E]" />
+        {/* Especificações do produto */}
+        <ProductDescription dimensao="120x105x45cm" peso="32,5 Kg" price="1250" madeira="Madeira de carvalho" />
       </main>
     </>
 
