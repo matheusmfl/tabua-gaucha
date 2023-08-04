@@ -19,7 +19,7 @@ export function ProductImgs({ mainImage, thumbs }: Product) {
     setCurrentImage(imageUrl);
   };
   return (
-    <main className="flex flex-col gap-[20px] px-3">
+    <main className="flex flex-col gap-[20px]">
       <div className="rounded w-full">
         <Image src={`${currentImage}`} alt="Alternative" width={400} height={280} className="rounded aspect-square h-[280px]" />
       </div>
