@@ -6,8 +6,33 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'titulo',
+      name: 'title',
       title: 'Título do produto',
+      type: 'string',
+    }),
+    defineField({
+      name: 'homeTitle',
+      title: 'Descrição do produto que deverá aparecer na homepage',
+      type: 'string',
+    }),
+    defineField({
+      name: 'madeira',
+      title: 'Tipo da madeira do produto',
+      type: 'string',
+    }),
+    defineField({
+      name: 'price',
+      title: 'Preço do produto',
+      type: 'string',
+    }),
+    defineField({
+      name: 'dimension',
+      title: 'Dimensões do produto',
+      type: 'string',
+    }),
+    defineField({
+      name: 'peso',
+      title: 'Peso do produto',
       type: 'string',
     }),
     defineField({
@@ -40,11 +65,7 @@ export default defineType({
         }
       ]
     }),
-    defineField({
-      name: 'homeProducts',
-      type: 'checkbox',
-      title: 'Este produto deve aparecer na home?'
-    }),
+
     defineField({
       name: 'images',
       type: 'array',
@@ -61,7 +82,7 @@ export default defineType({
             {
               name: 'alt',
               type: 'string',
-              title: 'Alternative text',
+              title: 'Texto descritivo da imagem',
             },
           ],
         },
