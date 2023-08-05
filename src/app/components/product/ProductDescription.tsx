@@ -35,15 +35,9 @@ export function ProductDescription({ price, madeira, dimensao, peso }: ProductDe
 
         {/* CTA Section */}
         <div className="flex flex-col gap-[10px] py-3">
-
           <button className="text-center py-3 shadow-lg hover:scale-105 uppercase text-xl bg-green-700 text-slate-50 rounded-[4px] w-full">
             COMPRAR
           </button>
-
-          <button className="text-center py-3 shadow-lg hover:scale-105 uppercase text-xl bg-green-700 text-slate-50 rounded-[4px] w-full">
-            COMPRAR
-          </button>
-
         </div>
 
       </div>

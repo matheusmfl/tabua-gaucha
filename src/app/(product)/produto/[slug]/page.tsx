@@ -16,7 +16,7 @@ export default async function Page({ params }: Props) {
   const page = await getPage(params.slug)
   const categories = await getCategories(params.slug)
 
-  console.log(page)
+
 
 
 
@@ -46,16 +46,16 @@ export default async function Page({ params }: Props) {
         {/* Divisor */}
         <div className="h-[1px] bg-[#3C3A1E]" />
         {/* Product Title */}
-        <ProductTitle title="Mesa de centro de - carvalho resinado" tags={tags} />
+        <ProductTitle title={page.title} tags={tags} />
         {/* Divisor */}
         <div className="h-[1px] bg-[#3C3A1E]" />
         {/* Especificações do produto */}
-        <ProductDescription dimensao="120x105x45cm" peso="32,5 Kg" price="1250" madeira="Madeira de carvalho" />
+        <ProductDescription dimensao={page.dimension} peso={page.peso} price={page.price} madeira={page.madeira} />
         {/* Divisor */}
         <div className="h-[1px] bg-[#3C3A1E]" />
 
       </main>
-      <Description />
+      <Description slug={params.slug} />
       <Footer />
     </>
 
