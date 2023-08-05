@@ -7,6 +7,7 @@ import { SectionProdutos } from "./components/SectionProdutos";
 import { SectionSobDemanda } from "./components/SectionSobDemanda";
 
 export default function Home() {
+
   return (
     <>
       <Header />

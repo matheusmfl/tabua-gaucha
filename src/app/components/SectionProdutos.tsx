@@ -1,10 +1,20 @@
+import Link from "next/link";
+import { builder, getProducts } from "../../../sanity/sanity-utils";
+import { Product } from "../../../sanity/types/Product";
 import { ProductCard } from "./microComponents/ProductCard";
 
-export function SectionProdutos() {
+export async function SectionProdutos() {
+  const products: Product[] = await getProducts()
+
+
+
+
+
   return (
     <section className="py-20 px-6 flex flex-col gap-10">
 
       {/* Chamada */}
+
       <div className="flex items-center justify-center flex-col gap-5">
         <h2 className="text-center font-roboto text-[#3C3A1E] text-4xl font-normal leading-[51px]">
           Nossa linha de <br />produtos
@@ -15,10 +25,18 @@ export function SectionProdutos() {
 
       {/* Produtos */}
       <div className="flex flex-col gap-10">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {products.map((product, index) => {
+          const imageUrl = builder.image(product.mainImage.asset._ref).url();
+
+          return (
+            <Link href={`/produto/${product.slug.current}`} key={index}>
+              <ProductCard key={index} altImage={'qualquercoisa'} imageUrl={imageUrl} price={product.price} description={product.homeTitle} />
+            </Link>
+
+          )
+        })}
+
+
       </div>
 
       {/* Textos */}
@@ -35,6 +53,6 @@ export function SectionProdutos() {
         </button>
       </div>
 
-    </section>
+    </section >
   )
 }

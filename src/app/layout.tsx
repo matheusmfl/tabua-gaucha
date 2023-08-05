@@ -14,12 +14,14 @@ export const metadata: Metadata = {
   title: 'Tábua Gaucha | Produtos de excelência',
   description: 'Madeira de primeira qualidade',
 }
+export const revalidate = 3600
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={`${inter.className} ${roboto.className}`}>{children}</body>

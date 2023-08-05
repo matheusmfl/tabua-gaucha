@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Category } from "../../../../sanity/types/Product"
 
 interface ProductTitleProps {
   tags: string[],
