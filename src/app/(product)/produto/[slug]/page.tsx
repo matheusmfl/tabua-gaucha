@@ -25,6 +25,7 @@ export default async function Page({ params }: Props) {
   page.images.map((image) => {
     const imageUrl = builder.image(image.asset._ref).url()
     images.push({ url: imageUrl, alt: image.alt })
+    
   })
 
   const tags: string[] = []
