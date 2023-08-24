@@ -2,7 +2,9 @@ import Image from "next/image";
 import { Cards } from "./microComponents/Cards";
 import teste from '../assets/bg-last-section.svg'
 
+
 export function LastSection() {
+
   return (
     <section className="px-6 py-20 flex flex-col gap-10 relative">
       {/* Titulo da sessão */}
