@@ -9,13 +9,46 @@ import 'swiper/css';
 
 import 'swiper/css/pagination';
 
-import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css/effect-coverflow';
+
+import 'swiper/css/parallax'
+
+import { Autoplay, EffectCoverflow, Pagination, Parallax } from 'swiper/modules';
+import { useEffect } from 'react';
+
 
 
 export function CarrosselEncomenda() {
-  SwiperCore.use([Autoplay, Pagination])
+  SwiperCore.use([Autoplay, Pagination, Parallax, EffectCoverflow])
+  useEffect(() => {
+    const bullets = document.querySelectorAll('.swiper-pagination-bullet');
+    const activeBullets = document.querySelectorAll('.swiper-pagination-bullet-active');
+
+
+    if (bullets) {
+      bullets.forEach(bullet => {
+        const bulletElement = bullet as HTMLElement;
+
+        bulletElement.style.backgroundColor = '#5C2C0C';
+        bulletElement.style.transform = 'scale(1.25)';
+
+      });
+    }
+  }, []);
   return (
     <Swiper
+      effect={'coverflow'}
+
+      coverflowEffect={
+        {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        }
+      }
+      modules={[EffectCoverflow, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
       loop={true}
@@ -26,26 +59,30 @@ export function CarrosselEncomenda() {
       pagination={{
         enabled: true,
         clickable: true,
+        type: 'bullets',
       }}
+      parallax={true}
+
+
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide>
+      <SwiperSlide className="swiper-slide">
         <div>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="swiper-slide">
         <div>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="swiper-slide">
         <div>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      <SwiperSlide className="swiper-slide">
         <div>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
