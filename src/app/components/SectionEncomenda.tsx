@@ -2,11 +2,11 @@ import { CarrosselEncomenda } from "./microComponents/CarrosselEncomenda";
 
 export function SectionEncomenda() {
   return (
-    <section className="py-10 px-6 bg-stone-100 flex flex-col gap-10">
+    <section className="py-10 px-6 bg-stone-100 flex flex-col gap-10 font-roboto">
 
       {/* HeadLine  com separator*/}
       <div className="flex flex-col gap-[22px]">
-        <h2 className="text-[32px] leading-[48px] font-medium text-[#3C3A1E]">
+        <h2 className="text-[32px] font-inter leading-[48px] font-medium text-[#3C3A1E]">
           Alguns de nossos trabalhos sob encomenda
         </h2>
 

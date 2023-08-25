@@ -22,8 +22,8 @@ module.exports = {
         'glasmophism-shadow': '4px 4px 8px 0px rgba(0, 0, 0, 0.12);'
       },
       fontFamily: {
-        roboto: 'var(--font-roboto)',
-        inter: 'var(--font-inter)'
+        roboto: ['var(--font-roboto)'],
+        inter: ['var(--font-inter)']
 
       }
     },
