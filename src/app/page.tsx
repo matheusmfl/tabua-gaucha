@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Section1 />
-      <SectionProdutos />
       <SectionEncomenda />
+      <SectionProdutos />
       <LastSection />
       <Footer />
     </>

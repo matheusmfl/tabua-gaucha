@@ -2,10 +2,10 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Raleway, Roboto } from 'next/font/google'
 
-const inter = Raleway({ subsets: ['latin'], weight: ['300', '400', '500', '700'], variable: '--font-inter' })
+const raleway = Raleway({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'], variable: '--font-inter' })
 
 const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
+  weight: ['300', '400', '500', '900', '700'],
   subsets: ['latin'],
   variable: '--font-roboto',
 })
@@ -24,7 +24,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} ${roboto.className}`}>{children}</body>
+      <body className={`${raleway.className} ${roboto.className}`}>{children}</body>
     </html>
   )
 }

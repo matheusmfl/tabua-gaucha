@@ -2,7 +2,7 @@ import { CarrosselEncomenda } from "./microComponents/CarrosselEncomenda";
 
 export function SectionEncomenda() {
   return (
-    <section className="py-10 px-6 bg-stone-100 flex flex-col gap-10 font-roboto">
+    <section className="py-10 px-6 bg-stone-100 flex flex-col gap-10 font-inter">
 
       {/* HeadLine  com separator*/}
       <div className="flex flex-col gap-[22px]">
