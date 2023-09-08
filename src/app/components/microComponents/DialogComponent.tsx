@@ -46,7 +46,7 @@ export function DialogComponent({ title }: FooterLinks) {
           <div className="mt-[25px] flex justify-end">
             <Dialog.Close asChild>
               <button className="bg-green4 text-green11 hover:bg-green5 focus:shadow-green7 inline-flex h-[35px] items-center justify-center rounded-[4px] px-[15px] font-medium leading-none focus:shadow-[0_0_0_2px] focus:outline-none">
-                Save changes
+                Solicitar contato
               </button>
             </Dialog.Close>
           </div>
