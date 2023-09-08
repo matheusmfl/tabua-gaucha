@@ -15,12 +15,12 @@ export async function SectionProdutos() {
 
       {/* Chamada */}
 
-      <div className="flex items-center justify-center flex-col gap-5">
-        <h2 className="text-center font-roboto text-[#3C3A1E] text-4xl font-normal leading-[51px]">
-          Nossa linha de <br />produtos
+      <div className="flex items-center justify-center flex-col gap-5 md:items-start">
+        <h2 className="text-center md:text-left font-inter text-[#3C3A1E] text-4xl font-normal leading-[51px]">
+          Produtos a pronta <br /> entrega
         </h2>
 
-        <div className="w-[160px] h-[1px] bg-[#3C3A1E]" />
+        <div className="w-[160px] h-[2px] md:h-[4px]  bg-[#DDA35D]" />
       </div>
 
       {/* Produtos */}

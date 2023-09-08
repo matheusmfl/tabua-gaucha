@@ -66,24 +66,25 @@ export function CarrosselEncomenda() {
 
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      className='md:h-[400px] md:w-[380px] md:rounded-md'
     >
       <SwiperSlide className="swiper-slide">
-        <div>
+        <div className='md:h-[400px] md:w-[380px]'>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <div>
+        <div className='md:h-[400px] md:w-[380px]'>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <div>
+        <div className='md:h-[400px] md:w-[380px]'>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <div>
+        <div className='md:h-[400px] md:w-[380px]'>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
