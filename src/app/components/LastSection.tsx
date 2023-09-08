@@ -17,7 +17,7 @@ export function LastSection() {
       </div>
 
       {/* Sessão de cards */}
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 md:grid md:grid-cols-3">
         <Cards title="qualidade"
           description="Todas as peças da Tábua Gaúcha são feitas de material 
           selecionado para oferecer um produto final da melhor qualidade e longa durabilidade" />
@@ -27,12 +27,12 @@ export function LastSection() {
 
       {/* Botão CTA */}
       <div>
-        <button className="rounded-[4px] w-full bg-[#8D684A] py-4 shadow-lg text-center text-white font-roboto text-xl font-medium uppercase">
+        <button className="rounded-[4px] md:w-[380px] w-full bg-green-500 py-4 shadow-lg text-center text-white font-roboto text-xl font-medium uppercase">
           faça um orçamento
         </button>
       </div>
 
-      <div className="absolute -z-10 left-0 top-0">
+      <div className="absolute -z-10 left-0 top-0 md:hidden">
         <Image src={teste} alt='test' />
       </div>
     </section>
