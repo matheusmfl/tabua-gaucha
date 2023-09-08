@@ -7,9 +7,6 @@ export async function SectionProdutos() {
   const products: Product[] = await getProducts()
 
 
-
-
-
   return (
     <section className="py-20 px-6 flex flex-col gap-10">
 
@@ -24,7 +21,7 @@ export async function SectionProdutos() {
       </div>
 
       {/* Produtos */}
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 md:grid md:grid-cols-2">
         {products.map((product, index) => {
           const imageUrl = builder.image(product.mainImage.asset._ref).url();
 
@@ -48,7 +45,7 @@ export async function SectionProdutos() {
 
       {/* botão */}
       <div>
-        <button className="rounded-[4px] w-full bg-green-500 py-4 shadow-lg text-center text-white font-roboto text-xl font-medium uppercase">
+        <button className="rounded-[4px] md:w-[380px] w-full bg-green-500 py-4 shadow-lg text-center text-white font-roboto text-xl font-medium uppercase">
           faça um orçamento
         </button>
       </div>
