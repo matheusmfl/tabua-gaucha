@@ -14,10 +14,20 @@ export function Baloon({ name, title }: { name: string, title: string }) {
 
         {/* star div */}
 
-        <div>
+        <div className="flex">
+          <Image src={star} alt="Estrelinha" />
+          <Image src={star} alt="Estrelinha" />
+          <Image src={star} alt="Estrelinha" />
+          <Image src={star} alt="Estrelinha" />
           <Image src={star} alt="Estrelinha" />
         </div>
       </div>
+
+      {/* Title */}
+
+      <span className="text-sm font-normal font-roboto text-slate-900">
+        {title}
+      </span>
 
 
     </div>
