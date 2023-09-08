@@ -48,7 +48,7 @@ export async function SectionProdutos() {
 
       {/* botão */}
       <div>
-        <button className="rounded-[4px] w-full bg-[#8D684A] py-4 shadow-lg text-center text-white font-roboto text-xl font-medium uppercase">
+        <button className="rounded-[4px] w-full bg-green-500 py-4 shadow-lg text-center text-white font-roboto text-xl font-medium uppercase">
           faça um orçamento
         </button>
       </div>

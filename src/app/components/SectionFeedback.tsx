@@ -20,9 +20,9 @@ export function SectionFeedback() {
 
       <div className="flex flex-col gap-3">
         <Baloon name="Robson Maranhão" title="Muito boa a qualidade, entregaram dentro do prazo e veio impecável, acabamento de ótima qualidade." />
-        <Baloon name="Robson Maranhão" title="Muito boa a qualidade, entregaram dentro do prazo e veio impecável, acabamento de ótima qualidade." />
-        <Baloon name="Robson Maranhão" title="Muito boa a qualidade, entregaram dentro do prazo e veio impecável, acabamento de ótima qualidade." />
-        <Baloon name="Robson Maranhão" title="Muito boa a qualidade, entregaram dentro do prazo e veio impecável, acabamento de ótima qualidade." />
+        <Baloon name="Renata Marinho" title="Muuuuito lindo, é tão bonito quanto na foto e o atendimento foi maravilhoso." />
+        <Baloon name="Esdras Morame" title="Tiveram toda atenção para me ajudar a escolher a melhor peça para a minha sala, recomendo demais." />
+        <Baloon name="Suellen Ohana" title="Já estou querendo comprar mais um pra minha casa, combinou muito bem com a decoração." />
 
       </div>
     </section>

@@ -9,7 +9,7 @@ export function Hero() {
         <h1 className="font-roboto text-[32px] text-stone-600 font-normal ">
           Móveis rústicos<br /> Premium com design <br className="md:hidden" /> exclusivo
         </h1>
-        <div className="w-[80px] h-[4px] bg-stone-600 md:w-[120px] md:h-[6px]" />
+        <div className="w-[80px] h-[4px] bg-[#DDA35D] md:w-[120px] md:h-[6px]" />
 
 
         {/* Texto que só existe na responsividade */}
