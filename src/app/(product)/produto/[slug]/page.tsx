@@ -25,7 +25,7 @@ export default async function Page({ params }: Props) {
   page.images.map((image) => {
     const imageUrl = builder.image(image.asset._ref).url()
     images.push({ url: imageUrl, alt: image.alt })
-    
+
   })
 
   const tags: string[] = []
@@ -40,20 +40,34 @@ export default async function Page({ params }: Props) {
       <div className="py-4">
         <IconsCarrossel />
       </div>
-      <main className="flex flex-col gap-3 px-3 py-1">
-        {/* Carrossel imagens */}
-        <ProductImgs thumbs={images} mainImage={mainImage}
-        />
-        {/* Divisor */}
-        <div className="h-[1px] bg-[#3C3A1E]" />
-        {/* Product Title */}
-        <ProductTitle title={page.title} tags={tags} />
-        {/* Divisor */}
-        <div className="h-[1px] bg-[#3C3A1E]" />
-        {/* Especificações do produto */}
-        <ProductDescription dimensao={page.dimension} peso={page.peso} price={page.price} madeira={page.madeira} />
-        {/* Divisor */}
-        <div className="h-[1px] bg-[#3C3A1E]" />
+      <main className="flex flex-col gap-3 px-3 py-1 lg:px-20 lg:grid lg:grid-cols-2 lg:pt-8">
+        <div>
+          {/* Carrossel imagens */}
+          <ProductImgs thumbs={images} mainImage={mainImage}
+          />
+          {/* Divisor */}
+          <div className="h-[1px] bg-[#3C3A1E] lg:hidden" />
+          {/* Product Title */}
+          <div className="lg:hidden">
+            <ProductTitle title={page.title} tags={tags} />
+          </div>
+
+          {/* Divisor */}
+          <div className="h-[1px] bg-[#3C3A1E] lg:hidden" />
+        </div>
+
+        <div>
+          {/* Especificações do produto */}
+          <div className="hidden lg:block">
+            <ProductTitle title={page.title} tags={tags} />
+            <div className="h-[1px] bg-[#3C3A1E] hidden lg:block" />
+          </div>
+          <ProductDescription dimensao={page.dimension} peso={page.peso} price={page.price} madeira={page.madeira} />
+          {/* Divisor */}
+          <div className="h-[1px] bg-[#3C3A1E] lg:hidden" />
+        </div>
+
+
 
       </main>
       <Description slug={params.slug} />
