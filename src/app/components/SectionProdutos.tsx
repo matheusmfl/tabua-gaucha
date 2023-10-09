@@ -8,7 +8,7 @@ export async function SectionProdutos() {
 
 
   return (
-    <section className="py-20 px-6 flex flex-col gap-10">
+    <section className="py-20 px-6 flex flex-col gap-10 lg:px-20">
 
       {/* Chamada */}
 
@@ -21,7 +21,7 @@ export async function SectionProdutos() {
       </div>
 
       {/* Produtos */}
-      <div className="flex flex-col gap-10 md:grid md:grid-cols-2">
+      <div className="flex flex-col gap-10 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:flex-wrap ">
         {products.map((product, index) => {
           const imageUrl = builder.image(product.mainImage.asset._ref).url();
 
