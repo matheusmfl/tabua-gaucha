@@ -24,7 +24,7 @@ export function Cards({ title, description }: CardsProps) {
       </div>
 
       {/* titulo */}
-      <h3 className='text-center font-roboto font-normal text-white text-lg'>
+      <h3 className='text-center font-roboto font-normal uppercase text-white text-lg'>
         {title}
       </h3>
 

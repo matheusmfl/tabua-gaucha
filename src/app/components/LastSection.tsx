@@ -13,7 +13,7 @@ export function LastSection() {
           Garantias e qualidades <br />da Tábua Gaúcha
         </h2>
 
-        <div className="w-[160px] h-[1px] bg-[#3C3A1E]" />
+        <div className="w-[160px] h-[4px] bg-[#DDA35D]" />
       </div>
 
       {/* Sessão de cards */}
@@ -28,7 +28,7 @@ export function LastSection() {
       {/* Botão CTA */}
       <div>
         <button className="rounded-[4px] md:w-[380px] w-full bg-green-500 py-4 shadow-lg text-center text-white font-roboto text-xl font-medium uppercase">
-          faça um orçamento
+          Faça um orçamento
         </button>
       </div>
 
