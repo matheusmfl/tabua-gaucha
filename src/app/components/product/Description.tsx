@@ -6,7 +6,7 @@ export async function Description({ slug }: { slug: string }) {
   const page = slug && await getPage(slug)
   console.log(page && page.body)
   return (
-    <section className="w-full mt-3 py-6 gap-8 flex flex-col bg-stone-200 px-[22px] lg:px-20 lg:justify-center font-inter text-[#3C3A1E] text-base">
+    <section className="w-full mt-3 py-6 lg:py-20 gap-8 flex flex-col bg-stone-200 px-[22px] lg:px-20 lg:justify-center font-inter text-[#3C3A1E] text-base">
       <h2 className="text-center text-xl font-medium leading-[32px]">DESCRIÇÃO DO PRODUTO</h2>
 
       {

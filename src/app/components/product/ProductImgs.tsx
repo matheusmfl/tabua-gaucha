@@ -21,7 +21,7 @@ export function ProductImgs({ mainImage, thumbs }: Product) {
   return (
     <main className="flex flex-col gap-[20px]">
       <div className="rounded w-full">
-        <Image src={`${currentImage}`} alt="Alternative" width={400} height={280} className="rounded aspect-square h-[280px]" />
+        <Image src={`${currentImage}`} alt="Alternative" width={400} height={280} className="rounded aspect-square object-cover h-[280px]" />
       </div>
       <div className="flex gap-2 overflow-x-auto pb-2">
         {thumbs &&
@@ -29,7 +29,7 @@ export function ProductImgs({ mainImage, thumbs }: Product) {
             <div key={index}
               className="w-[91px] h-[82px] aspect-video cursor-pointer relative "
               onClick={() => handleThumbnailClick(image.url)}>
-              <Image src={image.url} alt={image.alt} fill className="rounded-lg absolute" />
+              <Image src={image.url} alt={image.alt} fill className="rounded-lg object-cover absolute" />
             </div>
           ))}
       </div>
