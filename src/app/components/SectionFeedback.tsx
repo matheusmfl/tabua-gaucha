@@ -2,7 +2,7 @@ import { Baloon } from "./microComponents/Baloon";
 
 export function SectionFeedback() {
   return (
-    <section className="py-10 px-6 flex flex-col gap-10 bg-[#F5E6C0]">
+    <section className="py-10 px-6 lg:px-20 lg:py-16 flex flex-col gap-10 bg-stone-200">
 
       {/* Section divisor + texto */}
       <div className="flex gap-[20px] flex-col">
@@ -18,7 +18,7 @@ export function SectionFeedback() {
 
       {/* Section comentários */}
 
-      <div className="flex flex-col gap-3 md:grid md:grid-cols-2">
+      <div className="flex flex-col gap-3 md:grid md:grid-cols-4">
         <Baloon name="Robson Maranhão" title="Muito boa a qualidade, entregaram dentro do prazo e veio impecável, acabamento de ótima qualidade." />
         <Baloon name="Renata Marinho" title="Muuuuito lindo, é tão bonito quanto na foto e o atendimento foi maravilhoso." />
         <Baloon name="Esdras Morame" title="Tiveram toda atenção para me ajudar a escolher a melhor peça para a minha sala, recomendo demais." />

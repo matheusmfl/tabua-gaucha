@@ -6,7 +6,7 @@ import teste from '../assets/bg-last-section.svg'
 export function LastSection() {
 
   return (
-    <section className="px-6 py-20 flex flex-col gap-10 relative">
+    <section className="px-6 py-20 lg:px-20 flex flex-col gap-10 relative">
       {/* Titulo da sessão */}
       <div className="flex items-center justify-center flex-col gap-5">
         <h2 className="text-center font-roboto text-[#3C3A1E] text-4xl font-normal leading-[51px]">

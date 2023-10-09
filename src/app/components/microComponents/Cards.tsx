@@ -17,7 +17,7 @@ const iconMap = {
 export function Cards({ title, description }: CardsProps) {
   const icon = iconMap[title]
   return (
-    <div className="flex flex-col justify-center items-center shadow-md gap-5 rounded-lg bg-[#998270] p-5">
+    <div className="flex flex-col justify-center items-center shadow-md gap-5 rounded-lg bg-[#3C3A1E] p-5">
       {/* Icon */}
       <div>
         <Image src={icon} alt={`ícone ${title}`} />
