@@ -38,6 +38,17 @@ export function CarrosselEncomenda() {
   return (
     <Swiper
       effect={'coverflow'}
+      breakpoints={
+        {
+          600: {
+            slidesPerView: 4,
+            parallax: false,
+            effect: 'fade',
+            spaceBetween: 16,
+
+          }
+        }
+      }
 
       coverflowEffect={
         {
@@ -66,29 +77,35 @@ export function CarrosselEncomenda() {
 
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-      className='md:h-[400px] md:w-[380px] md:rounded-md'
+      className='md:h-[400px] md:w-full md:rounded-md'
     >
       <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] md:w-[380px]'>
+        <div className='md:h-[400px] '>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] md:w-[380px]'>
+        <div className='md:h-[400px] '>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] md:w-[380px]'>
+        <div className='md:h-[400px] '>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] md:w-[380px]'>
+        <div className='md:h-[400px] '>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
-    </Swiper>
+
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={genericImage} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+    </Swiper >
 
   )
 }
