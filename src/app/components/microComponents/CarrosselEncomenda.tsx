@@ -100,33 +100,35 @@ export function CarrosselEncomenda() {
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={genericImage} alt='Imagem genérica' />
+          <Image src={img01} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={img02} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={img03} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={img01} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={img02} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={img03} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
 
-      <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] '>
-          <Image src={genericImage} alt='Imagem genérica' />
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] '>
-          <Image src={genericImage} alt='Imagem genérica' />
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] '>
-          <Image src={genericImage} alt='Imagem genérica' />
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="swiper-slide">
-        <div className='md:h-[400px] '>
-          <Image src={genericImage} alt='Imagem genérica' />
-        </div>
-      </SwiperSlide>
     </Swiper >
 
   )
