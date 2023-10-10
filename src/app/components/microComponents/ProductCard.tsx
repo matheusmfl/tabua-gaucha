@@ -11,7 +11,7 @@ interface productCard {
 export function ProductCard({ imageUrl, altImage, description, price, key }: productCard) {
 
   return (
-    <div className="w-full flex flex-col md:w-[350px]" key={key}>
+    <div className="w-full flex flex-col md:w-[350px] cursor-pointer" key={key}>
       {/* div Img */}
       <div className="shadow-xl">
         <Image src={imageUrl} alt={altImage} width={400} height={600} className="w-full aspect-square object-cover shadow-xl" />
