@@ -3,7 +3,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
 import Image from 'next/image'
 import genericImage from '../../assets/imagemFiccticia.jpeg'
-
+import img01 from '@/app/assets/feedbackCard1.jpg'
+import img02 from '@/app/assets/feedbackCard2.jpg'
+import img03 from '@/app/assets/feedbackCard3.jpg'
 // Import Swiper styles
 import 'swiper/css';
 
@@ -45,6 +47,8 @@ export function CarrosselEncomenda() {
             parallax: false,
             effect: 'fade',
             spaceBetween: 16,
+            loop: true,
+            autoplay: true
 
           }
         }
@@ -81,7 +85,17 @@ export function CarrosselEncomenda() {
     >
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={genericImage} alt='Imagem genérica' />
+          <Image src={img01} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={img02} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={img03} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
@@ -89,11 +103,19 @@ export function CarrosselEncomenda() {
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
+
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
           <Image src={genericImage} alt='Imagem genérica' />
         </div>
       </SwiperSlide>
+
+      <SwiperSlide className="swiper-slide">
+        <div className='md:h-[400px] '>
+          <Image src={genericImage} alt='Imagem genérica' />
+        </div>
+      </SwiperSlide>
+
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
           <Image src={genericImage} alt='Imagem genérica' />
