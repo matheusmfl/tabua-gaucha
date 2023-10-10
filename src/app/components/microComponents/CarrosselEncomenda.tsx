@@ -85,47 +85,47 @@ export function CarrosselEncomenda() {
     >
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img01} alt='Imagem genérica' />
+          <Image src={img01} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img02} alt='Imagem genérica' />
+          <Image src={img02} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img03} alt='Imagem genérica' />
+          <Image src={img03} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img01} alt='Imagem genérica' />
+          <Image src={img01} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img02} alt='Imagem genérica' />
+          <Image src={img02} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img03} alt='Imagem genérica' />
+          <Image src={img03} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img01} alt='Imagem genérica' />
+          <Image src={img01} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img02} alt='Imagem genérica' />
+          <Image src={img02} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
       <SwiperSlide className="swiper-slide">
         <div className='md:h-[400px] '>
-          <Image src={img03} alt='Imagem genérica' />
+          <Image src={img03} alt='Imagem genérica' className='w-full object-cover' />
         </div>
       </SwiperSlide>
 
