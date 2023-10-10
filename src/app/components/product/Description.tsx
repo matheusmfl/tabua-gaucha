@@ -1,10 +1,12 @@
-import { getPage, builder } from "../../../../sanity/sanity-utils"
+import { getPage, builder, getDescriptions } from "../../../../sanity/sanity-utils"
 import { PortableText } from '@portabletext/react'
 import Image from 'next/image'
 
 export async function Description({ slug }: { slug: string }) {
   const page = slug && await getPage(slug)
-  console.log(page && page.body)
+  const descriptions = await getDescriptions(slug)
+
+  console.log(descriptions)
   return (
     <section className="w-full mt-3 py-6 lg:py-20 gap-8 flex flex-col bg-stone-200 px-[22px] lg:px-20 lg:justify-center font-inter text-[#3C3A1E] text-base">
       <h2 className="text-center text-xl font-medium leading-[32px]">DESCRIÇÃO DO PRODUTO</h2>
@@ -80,6 +82,20 @@ export async function Description({ slug }: { slug: string }) {
           />
         )
       }
+
+      {descriptions &&
+        descriptions.map((description: any, index: any) => {
+          return (
+            <div key={index}>
+              <h2 className="text-lg text-slate-900 font-bold leading-6 pb-2">{description.title}</h2>
+              <span className="text-base text-slate-900 font-normal leading-6 pb-2">
+                {description.body}
+              </span>
+            </div>
+
+          )
+
+        })}
 
 
     </section>

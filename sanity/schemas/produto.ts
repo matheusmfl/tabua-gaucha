@@ -107,6 +107,12 @@ export default defineType({
       title: 'Corpo',
       type: 'blockContent',
     }),
+    defineField({
+      name: 'descriptions',
+      title: 'Descrições dinâmicas',
+      type: 'array',
+      of: [{ type: 'reference', to: { type: 'descriptions' } }],
+    }),
   ],
 
   preview: {

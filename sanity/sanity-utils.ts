@@ -30,6 +30,25 @@ export async function getPage(slug: string): Promise<Product> {
   )
 }
 
+export async function getDescriptions(slug: string) {
+  const client = createClient(clientConfig)
+
+  try {
+    const query = `*[_type == "produto" && slug.current == $slug][0].descriptions[] -> {   
+        title,
+        body
+    }`
+
+    const product = await client.fetch(query, { slug });
+
+    // Retorna o resultado da consulta
+    return product;
+  } catch (error) {
+    console.error('Erro ao buscar o produto:', error);
+    throw error;
+  }
+}
+
 export async function getCategories(slug: string): Promise<Category[]> {
   const product = await createClient(clientConfig).fetch(
     groq`*[_type == "produto" && slug.current == $slug][0]`,
