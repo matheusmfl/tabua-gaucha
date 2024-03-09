@@ -22,15 +22,18 @@ export default async function Page({ params }: Props) {
 
   const images: any = []
 
-  page.images.map((image) => {
-    const imageUrl = builder.image(image.asset._ref).url()
-    images.push({ url: imageUrl, alt: image.alt })
 
+  page.images.map((image) => {
+    if(image.asset){
+      const imageUrl = builder.image(image.asset._ref).url()
+      images.push({ url: imageUrl, alt: image.alt })
+    }
   })
 
   const tags: string[] = []
 
-  const mainImage = builder.image(page.mainImage.asset._ref).url()
+  const mainImage = builder.image(page.mainImage.asset?._ref).url()
+ 
 
   categories.map((tag) => tags.push(tag.title))
   return (
@@ -43,8 +46,11 @@ export default async function Page({ params }: Props) {
       <main className="flex flex-col gap-3 px-3 py-1 lg:px-20 lg:grid lg:grid-cols-2 lg:pt-8">
         <div>
           {/* Carrossel imagens */}
-          <ProductImgs thumbs={images} mainImage={mainImage}
-          />
+          {
+            page.images && <ProductImgs thumbs={images} mainImage={mainImage}  />
+          }
+          
+         
           {/* Divisor */}
           <div className="h-[1px] bg-[#3C3A1E] lg:hidden" />
           {/* Product Title */}
